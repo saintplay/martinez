@@ -1,6 +1,6 @@
 'use strict';
 
-var Tree                 = require('avl');
+var Tree                 = require('avl').default;
 var computeFields        = require('./compute_fields');
 var possibleIntersection = require('./possible_intersection');
 var compareSegments      = require('./compare_segments');

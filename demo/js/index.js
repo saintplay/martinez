@@ -1,3 +1,9 @@
+var jsts = window.jsts = require('jsts');
+var L = window.L = require('leaflet');
+require('leaflet-editable');
+
+require('leaflet/dist/leaflet.css');
+
 require('./coordinates');
 require('./polygoncontrol');
 require('./booleanopcontrol');
