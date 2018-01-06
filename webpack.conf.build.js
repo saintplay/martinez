@@ -31,7 +31,11 @@ const config = {
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        include: [
+          path.resolve(__dirname, './src'),
+          path.resolve(__dirname, './test'),
+          path.resolve(__dirname, './node_modules/avl')
+        ],
       }
     ]
   },
